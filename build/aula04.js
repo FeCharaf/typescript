@@ -1,2 +1,4 @@
 "use strict";
-console.log("TESTE");
+let valor;
+valor = "nome";
+let number;
