@@ -2,7 +2,7 @@
 
 enum dias{
     domingo,
-    segunda,
+    segunda = 1,
     terca,
     quarta,
     quinta,
@@ -10,7 +10,7 @@ enum dias{
     sabado
 }
 
-console.log(dias[2])
+console.log(dias)
 
 enum tipoUsuario{
     USER=10,

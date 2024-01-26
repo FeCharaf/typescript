@@ -9,7 +9,7 @@ var dias;
     dias[dias["sexta"] = 5] = "sexta";
     dias[dias["sabado"] = 6] = "sabado";
 })(dias || (dias = {}));
-console.log(dias[2]);
+console.log(dias);
 var tipoUsuario;
 (function (tipoUsuario) {
     tipoUsuario[tipoUsuario["USER"] = 10] = "USER";
