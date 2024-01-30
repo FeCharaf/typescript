@@ -1,0 +1,2 @@
+//NULL - UNDEFINED - UNKNOWN
+
