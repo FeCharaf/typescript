@@ -2,11 +2,11 @@
 
 
 //Valores padroes quando se omite o valor na chamada da função
-function soma(n1:number=0,n2:number=2):number {  
+function somar(n1:number=0,n2:number=2):number {  
     return n1 + n2;
 }
 
-console.log(soma())
+console.log(somar())
 
 
 //parametro nome é opcional, caso nao tenha vai como undefined.
