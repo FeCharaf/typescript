@@ -9,7 +9,7 @@ function soma(n1:number=0,n2:number=2):number {
 console.log(soma())
 
 
-//parametro nome é opcional
+//parametro nome é opcional, caso nao tenha vai como undefined.
 function novoUser(user:string, pass:string, nome?:string):void {
     console.log(`User:${user}`);
     console.log(`Pass::${pass}`);
