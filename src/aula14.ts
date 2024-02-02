@@ -17,3 +17,11 @@ const somaArray=(n:number[]):number=>{
 }
 
 console.log(somaArray([10, 20, 30]))
+
+var somatorio:number = 0;
+var array:number[10,20,30]
+
+
+array.forEach((elemento)=>{         // elemento recebe cada item do array
+	somatorio+=elemento
+})
