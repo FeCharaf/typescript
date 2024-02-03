@@ -12,8 +12,8 @@ const somaArray = (n) => {
 };
 console.log(somaArray([10, 20, 30]));
 var somatorio = 0;
-var array;
-20, 30;
-array.forEach((elemento) => {
-    somatorio += elemento;
+var ar = [10, 20, 50];
+ar.forEach((e) => {
+    somatorio += e;
 });
+console.log(somatorio);
