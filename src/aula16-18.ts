@@ -6,11 +6,14 @@ class Computador {
     cpu:number = 0;
     ligado:boolean = false;
 
-    constructor() {
-        console.log("Novo computador criado!")
+    constructor(nome:string,ram:number,cpu:number) {
+        this.nome = nome;
+        this.ram = ram;
+        this.cpu = cpu;
+        console.log(`Novo Computador criado! Nome: ${nome}, Ram: ${ram}, Cpu: ${cpu}`)
     }
 }
 
 // INTANCIAÇÃO
 
-const comp1 = new Computador();
+const comp1 = new Computador("Comp1",12,10);

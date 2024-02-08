@@ -4,8 +4,11 @@ class Computador {
     ram = 0;
     cpu = 0;
     ligado = false;
-    constructor() {
-        console.log("Novo computador criado!");
+    constructor(nome, ram, cpu) {
+        this.nome = nome;
+        this.ram = ram;
+        this.cpu = cpu;
+        console.log(`Novo Computador criado! Nome: ${nome}, Ram: ${ram}, Cpu: ${cpu}`);
     }
 }
-const comp1 = new Computador();
+const comp1 = new Computador("Comp1", 12, 10);
