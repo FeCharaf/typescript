@@ -1,10 +1,10 @@
 // POO
 
 class Computador {
-  nome: string = "Computador 1";
-  ram: number = 0;
-  cpu: number = 0;
-  ligado: boolean = false;
+  nome: string;
+  private ram: number;
+  private cpu: number;
+  private ligado: boolean;
 
   constructor(nome: string, ram: number, cpu: number, ligado: boolean = false) {
     // Desligado por padrao
@@ -14,7 +14,7 @@ class Computador {
     this.ligado = ligado;
   }
 
-  info() {
+  info():void {
     // Método info
     console.log(`Nome..: ${this.nome}`);
     console.log(`RAM...: ${this.ram}`);
@@ -23,7 +23,7 @@ class Computador {
     console.log(`---------------------------`);
   }
 
-  ligar() {
+  ligar():void {
     this.ligado = true;
   }
 }
