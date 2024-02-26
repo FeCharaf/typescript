@@ -14,9 +14,15 @@ class Conta {
     console.log(`Titular:${this.titular}`)
     console.log(`Número.:${this.numero}`)
   }
+
   get saldo():number{ //Getter
     return this.saldoconta
   }
+
+  set saldo(saldoconta:number) { //Setter
+    this.saldoconta = saldoconta
+  }
+
   protected deposito(valor:number){
     if(valor < 0){
       console.log("Valor inválido")
@@ -100,3 +106,5 @@ const cont2 = new ContaPF(111, "Charaf");
 cont1.info()
 cont2.info()
 console.log(cont1.saldo) // O método saldo() se tornou uma propriedade por ser do tipo Getter.
+cont1.saldo = 300; // Setter em ação
+console.log(cont1.saldo)

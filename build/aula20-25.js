@@ -18,6 +18,9 @@ class Conta {
     get saldo() {
         return this.saldoconta;
     }
+    set saldo(saldoconta) {
+        this.saldoconta = saldoconta;
+    }
     deposito(valor) {
         if (valor < 0) {
             console.log("Valor inválido");
@@ -101,4 +104,6 @@ const cont1 = new ContaPJ(222444, "Felipe");
 const cont2 = new ContaPF(111, "Charaf");
 cont1.info();
 cont2.info();
+console.log(cont1.saldo);
+cont1.saldo = 300;
 console.log(cont1.saldo);
