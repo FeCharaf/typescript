@@ -15,7 +15,7 @@ class Conta {
         console.log(`Titular:${this.titular}`);
         console.log(`Número.:${this.numero}`);
     }
-    saldo() {
+    get saldo() {
         return this.saldoconta;
     }
     deposito(valor) {
@@ -101,3 +101,4 @@ const cont1 = new ContaPJ(222444, "Felipe");
 const cont2 = new ContaPF(111, "Charaf");
 cont1.info();
 cont2.info();
+console.log(cont1.saldo);

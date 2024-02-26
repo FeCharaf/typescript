@@ -14,7 +14,7 @@ class Conta {
     console.log(`Titular:${this.titular}`)
     console.log(`Número.:${this.numero}`)
   }
-  public saldo():number{
+  get saldo():number{ //Getter
     return this.saldoconta
   }
   protected deposito(valor:number){
@@ -99,3 +99,4 @@ const cont2 = new ContaPF(111, "Charaf");
 
 cont1.info()
 cont2.info()
+console.log(cont1.saldo) // O método saldo() se tornou uma propriedade por ser do tipo Getter.
