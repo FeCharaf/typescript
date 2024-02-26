@@ -27,7 +27,7 @@ class Conta {
     if(valor < 0){
       console.log("Valor inválido")
     } else {
-      this.saldoconta+=valor
+      this.saldo+=valor
     }
   }
   protected saque(valor:number){
@@ -36,7 +36,7 @@ class Conta {
       return
     }
     if(valor <= this.saldoconta){
-      this.saldoconta-=valor
+      this.saldo-=valor
     }else{
       console.log(`Saldo insuficiente`)
     }
