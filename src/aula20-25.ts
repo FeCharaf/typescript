@@ -1,4 +1,4 @@
-class Conta {
+abstract class Conta { // Classe abstrata nao pode ser instanciada
   protected numero: number;
   protected titular: string;
   private saldoconta:number;
