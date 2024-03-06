@@ -3,6 +3,7 @@ interface curso {
   des: string;
   aulas: number;
   maxAlunos?: number;  //Opcional
+  iniciarCurso?(p:string):void;
 }
 
 let curso1:curso;
